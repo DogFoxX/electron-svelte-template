@@ -18,7 +18,7 @@ eg. Cloning the project into Documents folder **C:\Users\UserName\Documents\My A
 
     npx degit DogFoxX/electron-svelte-template electron-svelte-app
 	
-**Switch to cloned directory**
+**Switch to cloned directory**<br>
 Again, replace electron-svelte-app with your project directory from the first step
 
     cd electron-svelte-app
@@ -27,7 +27,7 @@ Again, replace electron-svelte-app with your project directory from the first st
 
     npm install
     
-**Initialize Project**
+**Initialize Project**<br>
 Will ask for package name, description, author, github repo, etc
 
     npm init
