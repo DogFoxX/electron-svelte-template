@@ -1,3 +1,4 @@
+
 <div align="center">
 <h1><strong>Desktop Apps with Electron + Svelte</strong></h1>
 <br>
@@ -133,6 +134,9 @@ This file tells electron to add **App.svelte** inside the ```<body>``` of **inde
 We do not recommend to change anything here, except for any **props** you wish to send to **App.svelte**<br>
 If you do not want to send any props to **App.svelte**, you may go ahead and remove the property<br>
 
-That's it for now<br>
-Visit the <a  href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps
+### That's it for now<br>
+### Visit the <a  href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn more about Svelte
+<br>
 
+# :star: Contributions :star:
+### **electron-svelte-template** is based on <a href="https://github.com/soulehshaikh99/create-svelte-electron-app">create-svelte-electron-app</a> by <a href="https://github.com/soulehshaikh99">soulehshaikh99</a>
