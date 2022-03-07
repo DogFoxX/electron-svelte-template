@@ -31,12 +31,12 @@ Again, replace electron-svelte-app with your project directory from the first st
 Will ask for package name, description, author, github repo, etc
 
     npm init
-	
-**Update all Dependencies**
+    
+**Update all Dependencies (Optional)**
 
     npm install --save electron-serve@latest electron-window-state@latest
 
-**Update all Dev Dependencies**
+**Update all Dev Dependencies (Optional)**
 
     npm install --save-dev @rollup/plugin-commonjs@latest @rollup/plugin-node-resolve@latest concurrently@latest electron@latest electron-builder@latest rollup@latest rollup-plugin-css-only@latest rollup-plugin-livereload@latest rollup-plugin-svelte@latest rollup-plugin-terser@latest sirv-cli@latest svelte@latest wait-on@latest
 
