@@ -3,7 +3,7 @@
 <h1><strong>Desktop Apps with Electron + Svelte</strong></h1>
 <br>
 <br>
-<img src="https://raw.githubusercontent.com/dogfoxx/assets/master/electron-svelte-template/electron_svelte.png" alt="Electron + Svelte Banner" width="100%" />
+<img src="https://github.com/DogFoxX/assets/blob/master/electron-svelte-template/electron_svelte.png?raw=true" alt="Electron + Svelte Banner" />
 <br>
 <br>
 	<h3>Boilerplate to get started with Electron using the Svelte Framework</h3>
@@ -84,8 +84,10 @@ Version number inside **package.json** is also taken into account
 
     npm run deploy
     
-### 3) Result :computer:
-<img src="https://raw.githubusercontent.com/dogfoxx/assets/master/electron-svelte-template/screenshot.png" width="100%">
+### 3) Yes! :clap: Result :computer:
+<div align="center" back>
+	<img src="https://github.com/DogFoxX/assets/blob/master/electron-svelte-template/screenshot.png?raw=true">
+</div>
 
 ## Wait, I don't what to do next! :fearful:
 If you haven't used Svelte before, it may be a bit confusing at first where to start<br>
