@@ -41,6 +41,8 @@ Will ask for package name, description, author, github repo, etc
 
     npm install --save-dev @rollup/plugin-commonjs@latest @rollup/plugin-node-resolve@latest concurrently@latest electron@latest electron-builder@latest rollup@latest rollup-plugin-css-only@latest rollup-plugin-livereload@latest rollup-plugin-svelte@latest rollup-plugin-terser@latest sirv-cli@latest svelte@latest wait-on@latest
 
+### :exclamation: Pro tip: If using VS Code, install the <a href="https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode">Svelte for VS Code</a> extension
+
 ### 2) Changing some values :pencil2:
 After you've cloned the project you're ***almost*** ready to get started on your app<br>
 We need to change some things first
@@ -134,9 +136,8 @@ This file tells electron to add **App.svelte** inside the ```<body>``` of **inde
 We do not recommend to change anything here, except for any **props** you wish to send to **App.svelte**<br>
 If you do not want to send any props to **App.svelte**, you may go ahead and remove the property<br>
 
-### That's it for now<br>
-### Visit the <a  href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn more about Svelte
-<br>
+#### That's it for now<br>
+#### Visit the <a  href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn more about Svelte
 
 # :star: Contributions :star:
 ### **electron-svelte-template** is based on <a href="https://github.com/soulehshaikh99/create-svelte-electron-app">create-svelte-electron-app</a> by <a href="https://github.com/soulehshaikh99">soulehshaikh99</a>
