@@ -90,11 +90,11 @@ Svelte makes use of the **public** and **src** folders found in the root of your
 #### Public Folder
 Here you'll find two files; **global.css** and **index.html**
 
-- **global.css**
-**global.css** is where you'll add any css code to be applied to your whole app
+- **global.css**<br>
+This is where you'll add any css code to be applied to your whole app
 We recommend not to use this file to set all your css code, as it can get cluttered
 
-- **index.html**
+- **index.html**<br>
 This is the main html file where all your **.svelte** files will be loaded
 We do not recommend to change anything in the ```<body>``` tag
 Inside the ```<head>``` tag you can include more css stylesheets
@@ -102,7 +102,7 @@ Inside the ```<head>``` tag you can include more css stylesheets
 #### Src Folder
 Here you find two files; **App.svelte** and **main.js**
 
-- **App.svelte**
+- **App.svelte**<br>
 This file serves as the main html and scripts for your project
 **.svelte** files typically have a ```<script>``` tag where all your javascript code will be, and a ```<style>``` tag to add css code that only affect the html inside the current .svelte file
 You do not need to create a ```<body>``` tag again. Just write your html as normal.
@@ -124,8 +124,9 @@ eg.
 h1 { color: red;}
 </style>
 ```
+<br>
 
-- **main.js**
+- **main.js**<br>
 Not to be confused with the **main.js** in the root of your project
 This file is tells electron to add **App.svelte** inside the ```<body>``` of **index.html**
 We do not recommend to change anything here, except for any **props** you wish to send to **App.svelte**
