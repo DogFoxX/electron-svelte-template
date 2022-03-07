@@ -84,7 +84,9 @@ Version number inside **package.json** is also taken into account
 
     npm run deploy
     
+### 3) Result :computer:
 <img src="https://raw.githubusercontent.com/dogfoxx/assets/master/electron-svelte-template/screenshot.png" width="100%">
+
 ## Wait, I don't what to do next! :fearful:
 If you haven't used Svelte before, it may be a bit confusing at first where to start<br>
 We'll get you started with the basics
