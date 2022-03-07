@@ -1,17 +1,18 @@
 <div align="center">
-<font size="20px"><strong>Desktop Apps with Electron + Svelte</strong></font>
+<h1><strong>Desktop Apps with Electron + Svelte</strong></h1>
 <br>
 <br>
 <img src="https://raw.githubusercontent.com/dogfoxx/assets/master/electron-svelte-template/electron_svelte.png" alt="Electron + Svelte Banner" width="600" />
 <br>
 <br>
-<font size="15px">Boilerplate to get started with Electron using the Svelte Framework</font>
+	<h3>Boilerplate to get started with Electron using the Svelte Framework</h3>
 </div>
+<br>
 
 # Get Started :checkered_flag:
 ### 1) Clone this boilerplate
 
-**Run the following command to clone**
+**Run the following command to clone**<br>
 Replace electron-svelte-app to folder of your choice and with your project name<br>
 eg. Cloning the project into Documents folder **C:\Users\UserName\Documents\My App**
 
@@ -44,7 +45,7 @@ After you've cloned the project you're ***almost*** ready to get started on your
 We need to change some things first
 
 #### package.json:
-Open package.json with your preferred IDE, and look for **productName**<br>
+Open **package.json** with your preferred IDE, and look for **productName**<br>
 It's value will be the title of your app
 
 It may contain upper and lowercase letters, spaces and other special characters not allowed in the **name** property<br>
@@ -52,15 +53,15 @@ eg. If the **name** property is **"myapp"**, the **productName** property can be
 
 #### Electron-Builder:
 Open **electron-builder.yml** with your preferred IDE<br>
-You may change any values here, but we will only cover the ones that are need for now<br>
-See <a href="https://www.electron.build/configuration/configuration">Electron Builder <br>Configuration</a> for more details on each property
+You may change any values here, but we will only cover the ones that are needed for now<br>
+See <a href="https://www.electron.build/configuration/configuration">Electron Builder Configuration</a> for more details on each property
 
-- Set the **appID<**
+- Set the **appID**
 - Set the **uninstallDisplayName** (May contain upper and lowercase letters, spaces and other special characters)
 - Set **token** (Your GitHub Personal Access Token. This is needed if you wish to publish your app to your repo and use **electron-updater**
 
 ### 3) Running & Building your app :hammer:
-You should be good to go to run your app
+You should now be good to go to run your app
 
 **Test your app** :rocket:
 
@@ -68,7 +69,7 @@ You should be good to go to run your app
     
 **Build your app** :hammer:
 
-This will create a new folder in your project folder **dist**<br>
+This will create a new folder in your project folder, named **dist**<br>
 Inside the **dist** folder will be your setup file, and the fully unpacked app inside **win-unpacked** folder
 
     npm run build
@@ -81,7 +82,7 @@ Version number inside **package.json** is also taken into account
     npm run deploy
 
 ## Wait, I don't what to do next! :fearful:
-If you haven't used Svelte before, it may get a bit confusing where to start<br>
+If you haven't used Svelte before, it may be a bit confusing at first where to start<br>
 We'll get you started with the basics
 
 ### 1) CSS and HTML
@@ -100,7 +101,7 @@ We do not recommend to change anything in the ```<body>``` tag<br>
 Inside the ```<head>``` tag you can include more css stylesheets
 
 #### Src Folder
-Here you find two files; **App.svelte** and **main.js**
+Here you'll find two files; **App.svelte** and **main.js**
 
 - **App.svelte**<br>
 This file serves as the main html and scripts for your project<br>
@@ -127,8 +128,8 @@ h1 { color: red;}
 <br>
 
 - **main.js**<br>
-Not to be confused with the **main.js** in the root of your project<br>
-This file is tells electron to add **App.svelte** inside the ```<body>``` of **index.html**<br>
+Not to be confused with the **main.js** file in the root of your project<br>
+This file tells electron to add **App.svelte** inside the ```<body>``` of **index.html**<br>
 We do not recommend to change anything here, except for any **props** you wish to send to **App.svelte**<br>
 If you do not want to send any props to **App.svelte**, you may go ahead and remove the property<br>
 
