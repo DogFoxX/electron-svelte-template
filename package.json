@@ -1,0 +1,41 @@
+{
+	"name": "electron-svelte-app",
+	"productName": "Electron-Svelte-App",
+	"version": "1.0.0",
+	"description": "",
+	"repository": "",
+	"author": "",
+	"license": "",
+	"bugs": "",
+	"homepage": "",
+	"main": "main.js",
+	"scripts": {
+		"svelte-build": "rollup -c",
+		"svelte-dev": "rollup -c -w",
+		"start": "sirv public sirv public --host localhost --port 5000",
+		"electron": "wait-on http://localhost:5000 && electron .",
+		"dev": "concurrently \"npm run svelte-dev\" \"npm run electron\"",
+		"preelectron-pack": "npm run build",
+		"build": "npm run svelte-build && electron-builder build --win --publish never",
+		"deploy": "npm run svelte-build && electron-builder build --win --publish always"
+	},
+	"dependencies": {
+		"electron-serve": "^1.1.0",
+		"electron-window-state": "^5.0.3"
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^21.0.2",
+		"@rollup/plugin-node-resolve": "^13.1.3",
+		"concurrently": "^7.0.0",
+		"electron": "^17.1.0",
+		"electron-builder": "^22.14.13",
+		"rollup": "^2.70.0",
+		"rollup-plugin-css-only": "^3.1.0",
+		"rollup-plugin-livereload": "^2.0.5",
+		"rollup-plugin-svelte": "^7.1.0",
+		"rollup-plugin-terser": "^7.0.2",
+		"sirv-cli": "^2.0.2",
+		"svelte": "^3.46.4",
+		"wait-on": "^6.0.1"
+	}
+}

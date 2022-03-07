@@ -1,0 +1,17 @@
+appId: "com.electron-svelte.app"
+icon: ./resources/icon.ico
+nsis:
+    createStartMenuShortcut: "true"
+    deleteAppDataOnUninstall: "true"
+    uninstallDisplayName: "May contain upper and lowercase letters, spaces and other special characters"
+extraFiles: [
+    resources/**/**
+]
+files: [
+    public/**/*,
+    main.js,
+    preload.js
+]
+publish:
+    provider: github
+    token: Your GitHub Personal Access Token here
