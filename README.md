@@ -2,7 +2,7 @@
 <h1><strong>Desktop Apps with Electron + Svelte</strong></h1>
 <br>
 <br>
-<img src="https://raw.githubusercontent.com/dogfoxx/assets/master/electron-svelte-template/electron_svelte.png" alt="Electron + Svelte Banner" width="600" />
+<img src="https://raw.githubusercontent.com/dogfoxx/assets/master/electron-svelte-template/electron_svelte.png" alt="Electron + Svelte Banner" width="300" />
 <br>
 <br>
 	<h3>Boilerplate to get started with Electron using the Svelte Framework</h3>
