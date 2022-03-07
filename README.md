@@ -12,7 +12,7 @@
 ### 1) Clone this boilerplate
 
 **Run the following command to clone**
-Replace electron-svelte-app to folder of your choice and with your project name
+Replace electron-svelte-app to folder of your choice and with your project name<br>
 eg. Cloning the project into Documents folder **C:\Users\UserName\Documents\My App**
 
     npx degit DogFoxX/electron-svelte-template electron-svelte-app
@@ -40,20 +40,20 @@ Will ask for package name, description, author, github repo, etc
     npm install --save-dev @rollup/plugin-commonjs@latest @rollup/plugin-node-resolve@latest concurrently@latest electron@latest electron-builder@latest rollup@latest rollup-plugin-css-only@latest rollup-plugin-livereload@latest rollup-plugin-svelte@latest rollup-plugin-terser@latest sirv-cli@latest svelte@latest wait-on@latest
 
 ### 2) Changing some values :pencil2:
-After you've cloned the project you're ***almost*** ready to get started on your app
+After you've cloned the project you're ***almost*** ready to get started on your app<br>
 We need to change some things first
 
 #### package.json:
-Open package.json with your preferred IDE, and look for **productName**
+Open package.json with your preferred IDE, and look for **productName**<br>
 It's value will be the title of your app
 
-It may contain upper and lowercase letters, spaces and other special characters not allowed in the **name** property
+It may contain upper and lowercase letters, spaces and other special characters not allowed in the **name** property<br>
 eg. If the **name** property is **"myapp"**, the **productName** property can be **"MyApp"**
 
 #### Electron-Builder:
-Open **electron-builder.yml** with your preferred IDE
-You may change any values here, but we will only cover the ones that are neede for now
-See <a href="https://www.electron.build/configuration/configuration">Electron Builder Configuration</a> for more details on each property
+Open **electron-builder.yml** with your preferred IDE<br>
+You may change any values here, but we will only cover the ones that are need for now<br>
+See <a href="https://www.electron.build/configuration/configuration">Electron Builder <br>Configuration</a> for more details on each property
 
 - Set the **appID<**
 - Set the **uninstallDisplayName** (May contain upper and lowercase letters, spaces and other special characters)
@@ -68,20 +68,20 @@ You should be good to go to run your app
     
 **Build your app** :hammer:
 
-This will create a new folder in your project folder **dist**
+This will create a new folder in your project folder **dist**<br>
 Inside the **dist** folder will be your setup file, and the fully unpacked app inside **win-unpacked** folder
 
     npm run build
     
 **Publish your app** :trophy:
 
-This will build your app the same as `npm run build`, but it will also publish your app as a release in your GitHub Repo
+This will build your app the same as `npm run build`, but it will also publish your app as a release in your GitHub Repo<br>
 Version number inside **package.json** is also taken into account
 
     npm run deploy
 
 ## Wait, I don't what to do next! :fearful:
-If you haven't used Svelte before, it may get a bit confusing where to start
+If you haven't used Svelte before, it may get a bit confusing where to start<br>
 We'll get you started with the basics
 
 ### 1) CSS and HTML
@@ -91,20 +91,20 @@ Svelte makes use of the **public** and **src** folders found in the root of your
 Here you'll find two files; **global.css** and **index.html**
 
 - **global.css**<br>
-This is where you'll add any css code to be applied to your whole app
+This is where you'll add any css code to be applied to your whole app<br>
 We recommend not to use this file to set all your css code, as it can get cluttered
 
 - **index.html**<br>
-This is the main html file where all your **.svelte** files will be loaded
-We do not recommend to change anything in the ```<body>``` tag
+This is the main html file where all your **.svelte** files will be loaded<br>
+We do not recommend to change anything in the ```<body>``` tag<br>
 Inside the ```<head>``` tag you can include more css stylesheets
 
 #### Src Folder
 Here you find two files; **App.svelte** and **main.js**
 
 - **App.svelte**<br>
-This file serves as the main html and scripts for your project
-**.svelte** files typically have a ```<script>``` tag where all your javascript code will be, and a ```<style>``` tag to add css code that only affect the html inside the current .svelte file
+This file serves as the main html and scripts for your project<br>
+**.svelte** files typically have a ```<script>``` tag where all your javascript code will be, and a ```<style>``` tag to add css code that only affect the html inside the current .svelte file<br>
 You do not need to create a ```<body>``` tag again. Just write your html as normal.
 
 **eg.**
@@ -127,11 +127,11 @@ h1 { color: red;}
 <br>
 
 - **main.js**<br>
-Not to be confused with the **main.js** in the root of your project
-This file is tells electron to add **App.svelte** inside the ```<body>``` of **index.html**
-We do not recommend to change anything here, except for any **props** you wish to send to **App.svelte**
-If you do not want to send any props to **App.svelte**, you may go ahead and remove the property
+Not to be confused with the **main.js** in the root of your project<br>
+This file is tells electron to add **App.svelte** inside the ```<body>``` of **index.html**<br>
+We do not recommend to change anything here, except for any **props** you wish to send to **App.svelte**<br>
+If you do not want to send any props to **App.svelte**, you may go ahead and remove the property<br>
 
-That's it for now
+That's it for now<br>
 Visit the <a  href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps
 
