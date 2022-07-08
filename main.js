@@ -31,8 +31,8 @@ function createWindow() {
 		y: mainWindowState.y, // Sets last y position
 		width: mainWindowState.width, // Sets last width
 		height: mainWindowState.height, // Sets last height
-		minWidth: 816, // Minimum Width in pixels
-		minHeight: 679, // Minimum Height in pixels
+		minWidth: 800, // Minimum Width in pixels
+		minHeight: 600, // Minimum Height in pixels
 		webPreferences: {
 			nodeIntegration: true,
 			preload: path.join(__dirname, 'preload.js'),
