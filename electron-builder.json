@@ -1,0 +1,25 @@
+{
+	"appId": "com.example.app",
+	"icon": "./public/icon.ico",
+	"nsis": {
+		"artifactName": "${name}-setup.${ext}",
+    	"createStartMenuShortcut": "true",
+    	"deleteAppDataOnUninstall": "true",
+    	"uninstallDisplayName": "${productName}"
+	},
+	"directories": {
+		"output": "build"
+	},
+	"files": [
+		"electron/main.cjs",
+		"electron/preload.cjs",
+		{
+			"from": "dist",
+			"to": ""
+		}
+	],
+	"publish": {
+		"provider": "github",
+		"token": "<token>"
+	}
+}

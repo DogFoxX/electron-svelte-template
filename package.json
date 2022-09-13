@@ -1,0 +1,41 @@
+{
+  "name": "electron-svelte-tailwind",
+  "productName": "Electron-Svelte-Tailwind",
+  "version": "1.0.0",
+  "description": "Electron app built using Svelte and styled with Tailwind",
+  "repository": "",
+  "author": "",
+  "license": "",
+  "bugs": "",
+  "homepage": "",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -p \"[{time}] [{name}]\" -t \"HH:mm:ss\" -n svelte,electron -c #FD6937,#07B6D5 -s all \"npm run dev:vite\" \"electron .\"",
+    "dev:vite": "vite dev --host --port 5000",
+    "build": "npm run build:vite && npm run build:electron",
+    "build:vite": "vite build",
+    "build:electron": "electron-builder build --win --publish never",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.2",
+    "autoprefixer": "^10.4.9",
+    "concurrently": "^7.4.0",
+    "electron": "^20.1.3",
+    "electron-builder": "^23.3.3",
+    "electron-updater": "^5.2.1",
+    "postcss": "^8.4.16",
+    "svelte": "^3.49.0",
+    "svelte-preprocess": "^4.10.7",
+    "tailwindcss": "^3.1.8",
+    "vite": "^3.1.0",
+    "wait-on": "^6.0.1"
+  },
+  "dependencies": {
+    "electron-context-menu": "^3.5.0",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.1.0",
+    "electron-window-state": "^5.0.3"
+  }
+}
