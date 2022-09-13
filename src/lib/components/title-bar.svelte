@@ -1,4 +1,6 @@
 <script>
+import MainWindow from "$lib/windows/main-window.svelte";
+
 	// Svelte Imports
 	import { onMount } from "svelte";
 
@@ -10,7 +12,7 @@
 
 	onMount(async () => {
 		title = await mainWindow.getTitle();
-	});
+	})
 
     const windowAction = (e) => {
 		switch (e.target.id) {
@@ -24,7 +26,7 @@
 				mainWindow.close();
 				break;
 		}
-    };
+    }
 
 </script>
 

@@ -1,7 +1,7 @@
 declare const theme: {
 	/**
 		* Returns the currently saved themeMode as string.
-		* @returns dark, light or system
+		* @returns promise dark, light or system
    */
 	get(): string;
 
@@ -15,7 +15,7 @@ declare const theme: {
 declare const mainWindow: {
 	/**
 		* Returns the current state of Electron BrowserWindow
-		* @returns boolean - isMaximized();
+		* @returns promise boolean - isMaximized();
 	*/
 	getState(): async;
 
@@ -36,7 +36,7 @@ declare const mainWindow: {
 
 	/**
 		* Get Electron BrowserWindow Title
-		* @returns app.name
+		* @returns promise app.name
 	*/
 	getTitle(): async;
 
@@ -45,6 +45,7 @@ declare const mainWindow: {
 		* @param prepend prepend the current Electron BrowserWindow Title
 		* @param append append the current Electron BrowserWindow Title
 		* @param title overwrite the current Electron BrowserWindow Title
+		* @returns promise containing BrowserWindow Title
 	*/
 	setTitle({prepend, append, title}: {prepend?: string, append?: string, title?: string}): async;
 };
