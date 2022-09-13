@@ -8,7 +8,7 @@
   "license": "",
   "bugs": "",
   "homepage": "",
-  "main": "electron/main.cjs",
+  "main": ".electron/main.cjs",
   "type": "module",
   "scripts": {
     "dev": "concurrently -p \"[{time}] [{name}]\" -t \"HH:mm:ss\" -n svelte,electron -c #FD6937,#07B6D5 -s all \"npm run dev:vite\" \"electron .\"",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.2",
+    "@tsconfig/svelte": "^3.0.0",
     "autoprefixer": "^10.4.9",
     "concurrently": "^7.4.0",
     "electron": "^20.1.3",

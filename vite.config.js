@@ -7,6 +7,9 @@ import path from 'path';
 export default defineConfig({
   root: "src",
   publicDir: "../public",
+  build: {
+    outDir: "../.svelte"
+  },
   plugins: [svelte({
     preprocess: [sveltePreprocess({ postcss: true })]
   })],

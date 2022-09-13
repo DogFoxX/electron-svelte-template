@@ -102,7 +102,7 @@ svg, img {
 }
 
 .window-btn:hover {
-    background-color: #FFFFFF26;
+    background-color: var(--secondary-bg);
 }
 
 /* Sidebar */

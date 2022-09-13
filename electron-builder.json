@@ -8,13 +8,13 @@
     	"uninstallDisplayName": "${productName}"
 	},
 	"directories": {
-		"output": "build"
+		"output": ".build"
 	},
 	"files": [
-		"electron/main.cjs",
-		"electron/preload.cjs",
+		".electron/main.cjs",
+		".electron/preload.cjs",
 		{
-			"from": "dist",
+			"from": ".svelte",
 			"to": ""
 		}
 	],
