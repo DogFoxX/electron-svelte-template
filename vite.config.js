@@ -8,7 +8,8 @@ export default defineConfig({
   root: "src",
   publicDir: "../public",
   build: {
-    outDir: "../.svelte"
+    outDir: "../.svelte",
+    emptyOutDir: true
   },
   plugins: [svelte({
     preprocess: [sveltePreprocess({ postcss: true })]
