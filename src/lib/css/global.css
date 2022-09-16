@@ -86,9 +86,6 @@ svg, img {
 .window-btns {
 	display: flex;
 	justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 0;
     height: 100%;
     -webkit-app-region: none;
 }

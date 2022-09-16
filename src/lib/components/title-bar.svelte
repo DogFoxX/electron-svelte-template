@@ -32,7 +32,7 @@ import MainWindow from "$lib/windows/main-window.svelte";
 
 <div id="titlebar">
     <span class="mx-3 text-sm title">{title}</span>
-    <span class="window-btns">
+    <span class="window-btns ml-auto">
         <button on:click={windowAction} id="min" class="window-btn" tabindex="-1" title="Minimize">
 			<svg width="10px" height="1px">
 				<line x1="10" stroke="currentColor" stroke-width="2"/>
